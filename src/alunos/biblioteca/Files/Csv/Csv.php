@@ -13,8 +13,10 @@ namespace alunos\biblioteca\Files\Csv;
 
 class Csv
 {
-    public function __construct()
+    public function somar($val1, $val2)
     {
-        return true;
+        if (is_number($val1) && is_number($val2)) {
+            return $val1 + $val2;
+        }
     }
 }
