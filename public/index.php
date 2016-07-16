@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use alunos\biblioteca\Files\Csv\Csv;
+use alunos\biblioteca\Controllers\indexController as index;
 
-$csv = new Csv();
+$controller = new index;
+$controller->run();
