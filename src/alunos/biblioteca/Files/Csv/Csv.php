@@ -15,8 +15,10 @@ class Csv
 {
     public function somar($val1, $val2)
     {
-        if (is_number($val1) && is_number($val2)) {
+        if (is_numeric($val1) && is_numeric($val2)) {
             return $val1 + $val2;
         }
+        
+        return false;
     }
 }
