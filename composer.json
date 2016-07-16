@@ -1,0 +1,30 @@
+{
+    "name": "projeto de classes 4Linux",
+    "description": "",
+    "license": "GNU",
+    "type": "library",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-0":{
+            "alunos\\biblioteca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Douglas Barbosa Araujo",
+            "email": "michaeldouglas010790@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test:unit": "phpunit -c phpunit.xml tests/unit --coverage-html=./tests/phpunit"
+    },
+    "config":{
+        "bin-dir": "bin/"
+    },
+    "minimum-stability": "dev"
+}
