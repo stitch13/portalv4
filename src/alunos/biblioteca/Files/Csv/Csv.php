@@ -13,4 +13,8 @@ namespace alunos\biblioteca\Files\Csv;
 
 class Csv
 {
+    public function __construct()
+    {
+        return true;
+    }
 }
