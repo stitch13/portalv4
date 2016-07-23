@@ -9,7 +9,7 @@ class Pagina
     
     public function getPaginas($app, $id = 1)
     {
-        $app['entityManager']->getRepository('alunos\biblioteca\Models\Entities\Pagina')->findOneBy(array('Id' => $id));
+        return $app['entityManager']->getRepository('alunos\biblioteca\Models\Entities\Pagina')->findOneBy(array('Id' => $id));
     }
     
     public function setPagina($app, $data = [])

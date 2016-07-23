@@ -27,9 +27,14 @@ class Pagina
     public $Corpo;
     
     /**
-     * @Column(type="int", nullable=false, name="Posicao")
+     * @Column(type="integer", nullable=false, name="Posicao")
      */
     public $Posicao;
+    
+    /**
+     * @Column(type="datetime", nullable=false, name="DataHoraUpdate")
+     */
+    public $DataHoraUpdate;
     
     public function getIDPagina() 
     {
@@ -44,5 +49,10 @@ class Pagina
     public function getPosicaoPagina()
     {
         return $this->Posicao; 
+    }
+    
+    public function getDataHoraUpdate()
+    {
+        return $this->DataHoraUpdate;
     }
 }

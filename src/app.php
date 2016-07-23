@@ -13,5 +13,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../resources',
 ));
 
-// Chama a DotEnv onde se obtem as configuracoes do projeto
-(new Dotenv\Dotenv(__DIR__.'/../'))->load();
+//Chama a configuração do Doctrine para as entidades do portalv4
+require_once __DIR__ . '/../config/database.php';
+
+$app['debug'] = true;

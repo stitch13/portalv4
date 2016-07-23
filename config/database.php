@@ -3,7 +3,10 @@
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
-require_once $directory['directoryROOT'].'/../src/app.php';
+require_once __DIR__.'/../src/app.php';
+
+// Chama a DotEnv onde se obtem as configuracoes do projeto
+(new Dotenv\Dotenv(__DIR__.'/../'))->load();
 
 $app->register(new Silex\Provider\DoctrineServiceProvider(), [
     'dbs.options' => 
