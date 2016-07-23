@@ -7,12 +7,16 @@ piocoroSA entao voce devera altera o DocumentRoot e tambem
 o Directory
 
 Lembrar tambem de criar esse arquivo no caminho:
+```
     /etc/apache2/sites-enabled/portal.conf
+```
 
 Em seguida voce devera executar:
+```
     a2enmod http_proxy
     a2ensite portal.conf
     service apache2 restart
+```
 
 ` ATENCAO JOVEM ESSA CONFIGURA SO E PARA SER FEITA SE FOR PRECISO!!!! `
  E caso voce ja tenha configurado e precisa refazer alguma 
