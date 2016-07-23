@@ -11,7 +11,8 @@
         "doctrine/dbal": "~2.2",
         "doctrine/orm"  : "*",
         "doctrine/annotations": "*",
-        "doctrine/common": "2.5.*"
+        "doctrine/common": "2.5.*",
+        "monolog/monolog": "^1.20"
     },
     "require-dev": {
         "phpunit/phpunit": "4.0.*"
