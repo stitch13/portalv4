@@ -8,9 +8,10 @@ $app = new Silex\Application();
 $directory = [];
 $directory['directoryROOT'] = dirname(__DIR__);
 
-$app['debug'] = true;
-
 // Registro do Twig
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../resources',
 ));
+
+// Chama a DotEnv onde se obtem as configuracoes do projeto
+(new Dotenv\Dotenv(__DIR__.'/../'))->load();
