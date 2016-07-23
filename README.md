@@ -23,6 +23,7 @@ e habilitar novamente:
     a2ensite portal.conf
     service apache2 restart
 
+'''
 <VirtualHost *:80>
   ServerName projetoclasses.dev
   DocumentRoot /var/www/portalv4/public
@@ -44,3 +45,4 @@ e habilitar novamente:
   ProxyPass /layout http://localhost/portalv4/public/vendor/
   ProxyPassReverse /layout http://localhost/portalv4/public/vendor/
 </VirtualHost>
+'''
