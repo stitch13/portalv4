@@ -14,8 +14,7 @@ class frontController  implements ControllerProviderInterface
         $controllers = $app['controllers_factory'];
         
         $controllers->get('/', function (Application $app) { 
-            //return new Response('OI', 200);
-            return $app->json(['1'], 500);
+            return $app['twig']->render('conteudo/index.twig');
         });
         
         return $controllers;

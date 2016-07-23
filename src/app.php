@@ -7,3 +7,10 @@ $app = new Silex\Application();
 // config do sistema
 $directory = [];
 $directory['directoryROOT'] = dirname(__DIR__);
+
+$app['debug'] = true;
+
+// Registro do Twig
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+    'twig.path' => __DIR__.'/../resources',
+));

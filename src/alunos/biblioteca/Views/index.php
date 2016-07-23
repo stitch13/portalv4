@@ -1,5 +1,0 @@
-<html>
-	<body>
-        <?=$string?>
-    </body>
-</html>
