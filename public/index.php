@@ -1,7 +1,11 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
 
-use alunos\biblioteca\Controllers\indexController as index;
+$filename = __DIR__.preg_replace('#(\?.*)$#', '', $_SERVER['REQUEST_URI']);
+if (php_sapi_name() === 'cli-server' && is_file($filename)) {//Verifica se a requisição realmente é do index.php
+    return false;
+}
 
-$controller = new index;
-$controller->run();
+require_once __DIR__.'/../src/app.php';
+
+$app->mount('/', new alunos\biblioteca\Controllers\frontController);
+$app->run();
