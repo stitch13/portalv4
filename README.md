@@ -50,3 +50,23 @@ e habilitar novamente:
   ProxyPassReverse /layout http://localhost/portalv4/public/vendor/
 </VirtualHost>
 ```
+
+## Configurando ALIAS do Phing para o Linux
+
+Voce precisa criar o bash_profile para identificar o comando:
+
+```
+vi ~/.bashrc
+```
+
+Dentro do arquivo voce deve inserir a seguinte linha:
+
+```
+alias phing='php /root/.composer/vendor/phing/phing/bin/phing'
+```
+
+Agora execute o comando:
+
+```
+source ~/.bashrc
+```
