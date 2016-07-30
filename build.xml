@@ -42,6 +42,6 @@
     </target>
     <target name="env">
         <echo msg="Criando .env"/>
-        <exec command="mv .env.example .env" />
+        <exec command="cp .env.example .env" />
     </target>
 </project>
