@@ -1,0 +1,78 @@
+{% extends 'layouts/layout.twig' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-1"></div>
+        <div class="col-md-10"> 
+            <form  action="/cadrespidoso" method="POST" class="form-horizontal">
+                <h1>Dados de Responsavel</h1>
+                <h5>Preencha os dados abaixo para cadastrar um responsavel por idosos</h5>
+                <br> 
+                <!--CAMPO NOME-->
+                  <div class="form-group">
+                    <label for="inputNomeResp3" class="col-sm-2 control-label">Nome</label>
+                    <div class="col-sm-10">
+                      <input name='inputNomeResp3' type="text" class="form-control" id="inputNomeResp3" placeholder="Nome do Responsavel">
+                    </div>
+                  </div>
+                  
+                <!--CAMPO CPF-->
+                  <div class="form-group">
+                    <label for="inputCPFResp3" class="col-sm-2 control-label">CPF</label>
+                    <div class="col-sm-4">
+                      <input name='inputCPFResp3' type="text" class="form-control" id="inputCPFResp3" placeholder="CPF do Respesponsavel">
+                    </div>
+                  </div>
+                
+                <!--CAMPO ENDERECO-->
+                  <div class="form-group">
+                    <label for="inputEndereco3" class="col-sm-2 control-label">Endereco</label>
+                    <div class="col-sm-10">
+                      <input name='inputEndereco3'type="text" class="form-control" id="inputEndereco3" placeholder="Endereco">
+                    </div>
+                  </div>
+                
+                <!--CAMPO EMAIL-->
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input name='inputEmail3' type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                
+                <!--CAMPO TELEFONE-->
+                  <div class="form-group">
+                    <label for="inputTelefone3" class="col-sm-2 control-label">Telefone</label>
+                    <div class="col-sm-4">
+                      <input name='inputTelefone3' type="text" class="form-control" id="inputTelefone3" placeholder="Telefone">
+                    </div>
+                  </div>
+                <h1>Dados do Idoso</h1>
+                <h5>Preencha os dados abaixo os dados Idoso</h5>
+                <br>
+                <!--CAMPO NOME-->
+                  <div class="form-group">
+                    <label for="inputNomeIdoso3" class="col-sm-2 control-label">Nome</label>
+                    <div class="col-sm-10">
+                      <input name='inputNomeIdoso3' type="text" class="form-control" id="inputNomeIdoso3" placeholder="Nome do Idoso">
+                    </div>
+                  </div>
+                  
+                <!--CAMPO CPF-->
+                  <div class="form-group">
+                    <label for="inputCPFIdoso3" class="col-sm-2 control-label">CPF</label>
+                    <div class="col-sm-4">
+                      <input name='inputCPFIdoso3' type="text" class="form-control" id="inputCPFIdoso3" placeholder="CPF do Idoso">
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-success">Cadastrar</button>
+                    </div>
+                  </div>
+                </form>
+        </div>
+    <div class="col-md-1"></div>
+</div>
+{% endblock %}

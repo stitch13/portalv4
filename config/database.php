@@ -30,6 +30,6 @@ $driverImpl = $config->newDefaultAnnotationDriver('src/alunos/biblioteca/Models/
 $config->setProxyDir('src/alunos/biblioteca/Models/Entities/Api');
 $config->setProxyNamespace('src\alunos\biblioteca\Models\Entities\Api');
 $config->setAutoGenerateProxyClasses(true);
-//Conexão Default do projeto poraval v4
+//Conexão Default do projeto portal v4
 $entityManager = EntityManager::create($app['dbs.options']['portalv4_default'], $config);
 $app['entityManager'] = $entityManager;
