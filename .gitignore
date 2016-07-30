@@ -4,3 +4,6 @@ public/vendor/
 node_modules
 coverage/
 portalv4.log
+.idea/
+build/
+composer.phar
