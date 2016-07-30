@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Melhor Idade" default="start">
-    <target name="start" depends="composer,update,dirs,node,bower,gulp, dirsPermission"/>
+    <target name="start" depends="composer,update,dirs,node,bower,gulp, dirsPermission, env"/>
     <target name="composer">
         <available file="composer.phar" property="composer.exists"/>
         <echo msg="${composer.exists}"/>
@@ -25,18 +25,23 @@
     </target>
     <target name="bower">
         <echo msg="Instalando o bower"/>
-        <exec command="bower install" />
+        <exec command="bower install --allow-root" />
     </target>
     <target name="gulp">
         <echo msg="Executando a tarefa do Gulp"/>
         <exec command="gulp portal-scritps" dir="public/src" />
     </target>
     <target name="dirs">
-        <mkdir dir="build" />
+        <mkdir dir="log" />
+        <chmod file="log" mode="0777" verbose="true" />
     </target>
 
     <target name="dirsPermission">
         <echo msg="Aplicando permissão na pasta"/>
-        <chmod file="src" mode="0777" verbose="true" />
+        <chmod file="vendor" mode="0777" verbose="true" />
+    </target>
+    <target name="env">
+        <echo msg="Criando .env"/>
+        <exec command="mv .env.example .env" />
     </target>
 </project>

@@ -15,7 +15,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 //Exemplo de registro de log e utilização
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
-    'monolog.logfile' => __DIR__.'/../portalv4.log',
+    'monolog.logfile' => __DIR__.'/../log/portalv4.log',
 ));
 
 //Chama a configuração do Doctrine para as entidades do portalv4

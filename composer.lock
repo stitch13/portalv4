@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "502acd391e2a8dee4819d4ceb2b1c30f",
+    "content-hash": "fbcdaee05e1ff5406770c8d82bc08d12",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -861,12 +862,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "035d75bbff8e1f12cce56217e5439d1a0cba4465"
+                "reference": "8398292e9c5bacfe4f48208aabaa80b3e67a65a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/035d75bbff8e1f12cce56217e5439d1a0cba4465",
-                "reference": "035d75bbff8e1f12cce56217e5439d1a0cba4465",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8398292e9c5bacfe4f48208aabaa80b3e67a65a9",
+                "reference": "8398292e9c5bacfe4f48208aabaa80b3e67a65a9",
                 "shasum": ""
             },
             "require": {
@@ -915,7 +916,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-19 10:47:02"
+            "time": "2016-07-30 07:26:43"
         },
         {
             "name": "symfony/debug",
@@ -923,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "7bd1a604be83c0490b223df54581eaa01d97b9a3"
+                "reference": "60192753166696de6ac6414356bdaed1dfa15595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/7bd1a604be83c0490b223df54581eaa01d97b9a3",
-                "reference": "7bd1a604be83c0490b223df54581eaa01d97b9a3",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/60192753166696de6ac6414356bdaed1dfa15595",
+                "reference": "60192753166696de6ac6414356bdaed1dfa15595",
                 "shasum": ""
             },
             "require": {
@@ -972,7 +973,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:43:10"
+            "time": "2016-07-30 07:26:43"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1093,12 +1094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "8ff154783a597777ab111b1eec96cfc2e16deab5"
+                "reference": "03ac7bbc8fccbf002e0bea88dbe09262b29dc2a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/8ff154783a597777ab111b1eec96cfc2e16deab5",
-                "reference": "8ff154783a597777ab111b1eec96cfc2e16deab5",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/03ac7bbc8fccbf002e0bea88dbe09262b29dc2a9",
+                "reference": "03ac7bbc8fccbf002e0bea88dbe09262b29dc2a9",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1168,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-19 10:44:15"
+            "time": "2016-07-30 09:29:03"
         },
         {
             "name": "symfony/polyfill-mbstring",
